@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="SPECIALIZATION.css"?>
-<!DOCTYPE note SYSTEM "dt1.dtd">
-<note xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="sch.xsd">
-   <pricetag>Цена сета</pricetag>
-   <price>34.90р</price>
-</note>
