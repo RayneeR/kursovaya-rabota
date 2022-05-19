@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsi:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name='note'>
+    <xsi:complexType>
+      <xsi:sequence>
+        <xsi:element name="pricetag" type="xs:string"/>
+        <xsi:element name="price" type="xs:string"/>
+      </xsi:sequence>
+  </xsi:complexType>
+</xsi:schema>

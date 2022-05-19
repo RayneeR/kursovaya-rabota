@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(46, 39, 45);
+}
+.gridmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 0 1% 0 0%;
+    padding: 30px;
+}
+.gridmenu div {
+    background-color: rgb(255, 244, 244);
+    transition: .2s linear;
+    padding: 5px;
+    border-bottom: 2px solid rgb(212, 191, 191);
+}
+.contMain {
+    width: 80%;
+    background-color: rgb(247, 239, 239);
+    margin: 0 10% 0 10%;
+    border-radius: 1%;
+}
+.contMain h1 {
+    height: 100px;
+    font-size: 55px;
+    color:rgb(70, 60, 60);
+    text-align: left;
+    padding: 25px 0 0 30px;
+    border-bottom: 2px dashed rgb(231, 103, 124);
+    font-weight: bold;
+}
+img {
+    width: 150px;
+    height: 125px;
+    border-radius: 12px/12px;
+}
+div img {
+    float: left;
+    padding-right: 20px;
+}
+footer {
+    height: 200px;
+    background: #1a181a;
+}
+.premain {
+    border-top: 0.1em solid rgb(255, 91, 118);
+    border-bottom: 1.2em solid rgb(255, 91, 118);
+    width: 100%;
+    background-image: url(fsa.jpg);
+    background-size: 100%;
+    height: 900px;
+}
+.gridmenu div:hover {
+        transform: scale(0.98)
+}
+div p {
+    padding-right: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    margin-top: -15px;
+    font-weight: bold;
+}
+div h3 {
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    margin-top: -15px;
+    font-size: 22px
+}
+div input {
+    visibility: hidden;
+}
+fieldset {
+    border: none;
+}
+.buy {
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(233, 60, 60);
+    border: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-weight: bold;
+    transition: .3s;
+}
+.buy:hover {
+    cursor: pointer;
+    background-color: rgb(197, 48, 48);
+}
+.cartbuy {
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(233, 60, 60);
+    font-weight: bold;
+    transition: .3s;
+}
+.cartbuy:hover {
+    cursor: pointer;
+    background-color: rgb(241, 236, 236);
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Arimo');
+  nav {
+      border-bottom: 0.5em solid rgb(255, 91, 118);
+  }
+  .top-menu {
+    position: relative;
+    background: rgba(34,34,34,.2);
+  }
+  .menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.left-item {
+      float: left;
+      margin-left: 5%;
+}
+.right-item {
+      float: right;
+      margin-right: 5%;
+}
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.navbar-logo img {
+    width: 95%;
+    transition: .2s linear;
+}
+.navbar-logo img:hover {
+    transform: scale(1.05);
+}
+  .menu-main a {
+    text-decoration: none;
+    display: block;
+    line-height: 100px;
+    padding: 0 20px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: .2s linear;
+  }
+  .menu-main a:hover {
+    transform: scale(0.95);
+}
+h1 {
+    font-family: 'Arimo', sans-serif;
+}
+
+
