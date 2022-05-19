@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fstyle.css">
+</head>
+
+<body>
+    <div name="form" class="content">
+        <div class="title"><span><h2> Оформление заказа </h2></span></div>
+        <p></p>
+        <div class="form"><form name="my_form">
+          <label><span class="fio"> ФИО:</span> <br />
+          <input class="guest"/></label> <p></p>
+          <label><span class="email"> E-mail:</span><br />
+          <input class="guest"/></label><p></p>
+          <label><span> Телефон:</span><br />
+          <input class="guest"/></label><p></p><br /><p></p>
+          <label><span> Тип доставки:</span><br />
+          <select class="selection">
+            <option value="1">Курьером</option>
+            <option value="2">Бесконтактная</option>
+            <option value="3">Самовывоз</option>
+          </select></label><p></p><br />
+          <label><span class="adress"> Адрес доставки:</span><br />
+          <textarea rows="10" cols="45" name="text" class="textar"></textarea></label><p></p>
+        <!--или <label><span class="date"> Дата доставки:</span>
+          <input type="date"/></label>-->
+        <div class="bottom">
+        <input type="button" onclick="alert('Заказ принят в обработку!')" class="bottom1" value="Заказать"/>
+        </div>
+      </div>
+</body>
+</html>

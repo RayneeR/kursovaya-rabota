@@ -1,0 +1,232 @@
+.swiper {
+    width: 80%;
+    border-radius: 3%;
+}
+.mySwiper {
+    border-radius: 0;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 550px;
+    border-radius: 3%;
+}
+#inform {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(247, 239, 239);
+}
+.textov {
+    text-align: left;
+    margin-left: 10%;
+}
+.first {
+    width: 70%;
+    float: left;;
+}
+.second {
+    width: 70%;
+    float: right;
+}
+.third {
+    width: 70%;
+    float: left;
+}
+.first p {
+    float: left;
+    text-align: left;
+}
+.second p {
+    width: 49%;
+    float: right;
+    display: flex;
+    border-right: 1px solid red;
+    text-align: left;
+}
+.third p {
+    float: left;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.third span {
+    text-decoration: underline;
+    color: rgb(97, 36, 36);
+}
+.Bonus {
+    width: 90%;
+    background-color: rgb(247, 239, 239);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.allend {
+    background-image: linear-gradient(to left, rgb(226, 137, 102), rgb(224, 55, 69));
+    color: white;
+    padding: 20px;
+    margin-top: 7%;
+    border-radius: 10px;
+    height: 20%;
+}
+.allend h2, p {
+    border: none;
+    text-align: center;
+    font-size: 22px;
+}
+.allend h2 {
+    font-size: 30px;
+}
+.footer-container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    text-align: left;
+    float: left;
+    position: relative;
+    background-color: #1a181a;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgb(254, 109, 111);
+}
+
+.footer-container .footer-title {
+    width: 100%;
+    display: inline-block;
+}
+.footer-links a {
+  width: 30%;
+  display: block;
+  text-align: left;
+  color: #4e4a4a;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.footer-links a:hover {
+  color: rgb(124, 117, 117);
+}
+.footer-links p {
+  color: #383535;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1em;
+}
+.footer-links h4 {
+  text-align: left;
+  color: rgb(56, 53, 53);
+  margin-right: 1%;
+}
+@media (max-width: 1024px) {
+    .contMain h1 {
+        font-size: 35px;
+    }
+    .contMain {
+        margin-top: 90px;
+    }
+}
+@media (max-width: 849px) {
+    .second  {
+        float: left;
+        width: 100%;
+    }
+    .first {
+        float: left;
+        width: 100%;
+    }
+    .third  {
+        float: left;
+        width: 100%;
+    }
+    .second p {
+        width: 100%;
+        float: none;
+        border-right: none;
+        border-bottom: 1px solid red;
+        font-size: 20px;
+
+    }
+    .first p {
+        text-align: left;
+    }
+    .third p {
+        text-align: left;
+    }
+    .contMain h1 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .contMain {
+        margin-top: 90px;
+        width: 90%;
+        margin: 5% 5% 0 5%;
+    }
+    .contMain h1 {
+        margin-top: 85px;
+    }
+    .premain {
+        margin-top: 23%;
+        height: 350px;
+    }
+    .swiper {
+        width: 100%;
+        border-radius: 0;
+    }
+    .setprice {
+        margin-top: 20px;
+    }
+    .buy {
+        width: 100%;
+    }
+    .textdown p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    #inform {
+        width: 90%;
+    }
+    .gridmenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-basis: 420px;
+        width: 100%;
+        height: 100%;
+        margin: 0 1% 0 0%;
+    }
+    .gridmenu>* {
+        flex: 1 1 320px;
+    }
+    .gridmenu div {
+        margin: auto;
+        max-width: 650px;
+    }
+}
+@media (max-width: 650px) {
+    .premain {
+        margin-top: 23%;
+        height: 240px;
+    }
+}
+@media (max-width: 414px) {
+    div h3 {
+        font-size: 17px
+    }
+    .gridmenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-basis: 270px;
+        width: 100%;
+        height: 100%;
+        margin: 0 1% 0 0%;
+    }
+    .gridmenu>* {
+        flex: 1 1 270px;
+    }
+    .contMain h1 {
+        font-size: 25px;
+    }
+}

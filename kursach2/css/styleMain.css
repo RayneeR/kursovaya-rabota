@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+body {
+    background-color: #2e272d;
+}
+
+.contMain {
+    width: 80%;
+    background-color: #f7efef;
+    margin: 5% 10% 0 10%;
+    border-radius: 1%;
+}
+.contMain h1 {
+    width: 90%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color:#463c3c;
+    padding: 25px 0 0 30px;
+    border-bottom: 2px solid rgb(254, 109, 111);
+    font-weight: bold;
+}
+img {
+    width: 150px;
+    height: 125px;
+    border-radius: 12px/12px;
+}
+
+.premain {
+    border-top: 0.1em solid #ff5b76;
+    border-bottom: 1.2em solid rgb(255, 91, 118);
+    width: 100%;
+    background-image: url(fsa.jpg);
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-top: 4.5%;
+}
+.premain img {
+    width: 100%;
+    height: 100%;
+}
+.gridmenu div:hover {
+        transform: scale(0.98)
+}
+.gridmenu p {
+    padding-right: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e2020;
+    text-align: left;
+}
+div h3 {
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 22px
+}
+div input {
+  opacity: 0;
+/*  visibility: hidden; */
+}
+fieldset {
+    border: none;
+}
+.buy {
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(235, 74, 74);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+    margin-top: 20px;
+}
+.buy:hover {
+    cursor: pointer;
+    background-color: rgb(197, 48, 48);
+}
+.buy a {
+  color: #fff;
+  margin-left: 7%;
+}
+
+h1 {
+    font-family: 'Arimo', sans-serif;
+}
+.setprice {
+  text-align: right;
+  font-size: 30px;
+  color: #443333;
+  margin-top: -20px;
+}
+
+.textdown p{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+footer {
+    background-color: rgb(32, 26, 26);
+}

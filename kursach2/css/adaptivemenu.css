@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    background-color: #271a20;
+    box-shadow: 1px 1px 5px 0px #ff6d6d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo{
+    display: inline;
+    margin-left: 10px;
+    float: none;
+    margin: auto;
+}
+.logo img {
+    margin-top: 10px;
+    width: 120px;
+    height: 60px;
+    transition: .3s;
+}
+.logo img:hover {
+    transform: scale(1.15);
+}
+.nav{
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(39, 26, 32, 0.8);
+    overflow: hidden;
+}
+menu {
+    margin: auto;
+}
+.menu a{
+    display: block;
+    padding: 30px;
+    color: white;
+    transition: .2s;
+}
+.menu a:hover{
+    background-color: #c46f7a;
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.menu a:hover{
+    transform: scale(0.95);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.showb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.showb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+.showb-line::before,
+.showb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.showb-line::before{
+    top: 5px;
+}
+.showb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+    
+}
+ 
+.showb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+ 
+} 
+ 
+.showb-line::before,
+.showb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.showb-line::before{
+    top: 5px;
+}
+.showb-line::after{
+    top: -5px;
+}
+ 
+.side-menu {
+    display: none;
+} 
+.side-menu:checked ~ nav{
+    max-height: 100%;
+    
+}
+
+.side-menu:checked ~ .showb .showb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .showb .showb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .showb .showb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+.supbutton {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9e5858;
+    color: white;
+    margin-top: 20px;
+}
+.supbutton:hover {
+    cursor: pointer;
+    background-color: #e98080;
+}
+@media (min-width: 850px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: 100%;
+        margin: auto;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: rgb(158, 124, 134);
+ 
+    }
+ 
+    .showb{
+        display: none;
+    }
+    .logo {
+        display: inline-block;
+        float: left;
+    }
+    .gridmenu {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        row-gap: auto;
+    }
+    .gridmenu>* {
+        flex: 1 1 auto;
+    }
+    .gridmenu div {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        flex: 0 0 calc( 50% - 30px );
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        transition: .3s;
+    }
+}
+@media (max-width: 849px) {
+    .premain {
+        margin-top: 80px;
+    }
+    .contMain h1 {
+        font-size: 40px;
+    }
+    .allend {
+        margin-top: 17%;
+    }
+}
+@media (min-width: 1024px) {
+    .gridmenu {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        row-gap: auto;
+    }
+    .gridmenu>* {
+        flex: 1 1 auto;
+    }
+    .gridmenu div {
+        padding: 15px;
+        flex: 0 0 calc( 33% - 30px );
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        transition: .3s;
+    }
+}

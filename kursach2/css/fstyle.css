@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.form {
+  color: rgb(0, 0, 0);
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+.content {
+  width: 100%;
+  border: none;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  }
+.title{
+  width: 100%;
+  height: 50px;
+  text-align:center;
+  color: #444343;
+  padding: 8px 20px 20px;
+}
+.bottom{
+  width: 100%;
+  height: 40px;
+  padding: 15px 20px 10px;
+}
+.fio::after,.email::after, .adress::after, .selection::after{
+  content:"*";
+  color:red;
+}
+.bottom1{
+  background: rgb(255, 119, 119);
+  font-size: 10pt;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  width: 100px;
+  font-weight:bold;
+  }
+  .bottom1:hover{
+  background: rgb(216, 90, 90);
+  transform: scale(1.05);
+  cursor: pointer;
+  }
+.guest {
+  width: 380px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(160, 148, 148);
+}
+.textar {
+  width: 48%;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(160, 148, 148);
+}
+.textar1{
+  width: 38%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(160, 148, 148);
+}
+.selection {
+  width: 280px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(160, 148, 148);
+}
